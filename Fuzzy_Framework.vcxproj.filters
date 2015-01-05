@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\core">
+      <UniqueIdentifier>{b47babf2-887d-4fa8-835e-f2a225781a49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\fuzzy">
+      <UniqueIdentifier>{444e98b1-924c-4902-98ba-294035697ab1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Expression.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="UnaryExpression.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryExpression.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="Agg.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="And.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="Or.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="Then.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueModel.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="UnaryExpressionModel.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryExpressionModel.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="NullExpressionException.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AndMin.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="AndMult.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="OrMax.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="OrPlus.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="ThenMin.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="ThenMult.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="AggMax.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="AggPlus.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="Not.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="Is.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="NotMinus1.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="IsTriangle.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="UnaryShadowExpression.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryShadowExpression.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpressionFactory.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="FuzzyFactory.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="MamdaniDefuzz.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="Evaluator.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="CogDefuzz.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="NaryExpression.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="NaryExpressionModel.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="SugenoDefuzz.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="SugenoThen.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="SugenoConclusion.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="NaryShadowExpression.h">
+      <Filter>Header Files\fuzzy</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Fuzzy_Framework.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Expression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnaryExpression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryExpression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="And.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Or.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Then.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Agg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ValueModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnaryExpressionModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryExpressionModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AndMin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AndMult.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NullExpressionException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrMax.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrPlus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThenMin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThenMult.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AggMax.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AggPlus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Not.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Is.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NotMinus1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IsTriangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnaryShadowExpression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryShadowExpression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpressionFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FuzzyFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaniDefuzz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Evaluator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CogDefuzz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NaryExpression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NaryExpressionModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NaryShadowExpression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SugenoDefuzz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SugenoConclusion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SugenoThen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

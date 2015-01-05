@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A9BE7072-7415-47A7-9514-4F22FCF6C406}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Fuzzy_Framework</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Agg.h" />
+    <ClInclude Include="AggMax.h" />
+    <ClInclude Include="AggPlus.h" />
+    <ClInclude Include="And.h" />
+    <ClInclude Include="AndMin.h" />
+    <ClInclude Include="AndMult.h" />
+    <ClInclude Include="BinaryExpression.h" />
+    <ClInclude Include="BinaryExpressionModel.h" />
+    <ClInclude Include="BinaryShadowExpression.h" />
+    <ClInclude Include="CogDefuzz.h" />
+    <ClInclude Include="Evaluator.h" />
+    <ClInclude Include="Expression.h" />
+    <ClInclude Include="ExpressionFactory.h" />
+    <ClInclude Include="FuzzyFactory.h" />
+    <ClInclude Include="Is.h" />
+    <ClInclude Include="IsTriangle.h" />
+    <ClInclude Include="MamdaniDefuzz.h" />
+    <ClInclude Include="NaryExpression.h" />
+    <ClInclude Include="NaryExpressionModel.h" />
+    <ClInclude Include="NaryShadowExpression.h" />
+    <ClInclude Include="Not.h" />
+    <ClInclude Include="NotMinus1.h" />
+    <ClInclude Include="NullExpressionException.h" />
+    <ClInclude Include="Or.h" />
+    <ClInclude Include="OrMax.h" />
+    <ClInclude Include="OrPlus.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SugenoConclusion.h" />
+    <ClInclude Include="SugenoDefuzz.h" />
+    <ClInclude Include="SugenoThen.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Then.h" />
+    <ClInclude Include="ThenMin.h" />
+    <ClInclude Include="ThenMult.h" />
+    <ClInclude Include="UnaryExpression.h" />
+    <ClInclude Include="UnaryExpressionModel.h" />
+    <ClInclude Include="UnaryShadowExpression.h" />
+    <ClInclude Include="ValueModel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Agg.cpp" />
+    <ClCompile Include="AggMax.cpp" />
+    <ClCompile Include="AggPlus.cpp" />
+    <ClCompile Include="And.cpp" />
+    <ClCompile Include="AndMin.cpp" />
+    <ClCompile Include="AndMult.cpp" />
+    <ClCompile Include="BinaryExpression.cpp" />
+    <ClCompile Include="BinaryExpressionModel.cpp" />
+    <ClCompile Include="BinaryShadowExpression.cpp" />
+    <ClCompile Include="CogDefuzz.cpp" />
+    <ClCompile Include="Evaluator.cpp" />
+    <ClCompile Include="Expression.cpp" />
+    <ClCompile Include="ExpressionFactory.cpp" />
+    <ClCompile Include="FuzzyFactory.cpp" />
+    <ClCompile Include="Fuzzy_Framework.cpp" />
+    <ClCompile Include="Is.cpp" />
+    <ClCompile Include="IsTriangle.cpp" />
+    <ClCompile Include="MamdaniDefuzz.cpp" />
+    <ClCompile Include="NaryExpression.cpp" />
+    <ClCompile Include="NaryExpressionModel.cpp" />
+    <ClCompile Include="NaryShadowExpression.cpp" />
+    <ClCompile Include="Not.cpp" />
+    <ClCompile Include="NotMinus1.cpp" />
+    <ClCompile Include="NullExpressionException.cpp" />
+    <ClCompile Include="Or.cpp" />
+    <ClCompile Include="OrMax.cpp" />
+    <ClCompile Include="OrPlus.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SugenoConclusion.cpp" />
+    <ClCompile Include="SugenoDefuzz.cpp" />
+    <ClCompile Include="SugenoThen.cpp" />
+    <ClCompile Include="Then.cpp" />
+    <ClCompile Include="ThenMin.cpp" />
+    <ClCompile Include="ThenMult.cpp" />
+    <ClCompile Include="UnaryExpression.cpp" />
+    <ClCompile Include="UnaryExpressionModel.cpp" />
+    <ClCompile Include="UnaryShadowExpression.cpp" />
+    <ClCompile Include="ValueModel.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
